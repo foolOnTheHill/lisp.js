@@ -13,7 +13,7 @@
 		} else if (token === '#f') {
 			return false;
 		} else if (!isNaN(parseFloat(token))) {
-			return parseInt(token);
+			return parseFloat(token);
 		} else if (token === 'lambda' || token === 'let' || token === 'set!' || token === 'quote' || token === 'if' || token === 'apply' || token === 'define' || token === 'begin'){
             return token
 		} else {
